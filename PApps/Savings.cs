@@ -12,7 +12,7 @@ namespace SBS
 
 
         public decimal InterestRate { get; private set; }
-        public SavingAccount(int ac, string ach, decimal bal, decimal ir) : base(ac, ach, bal)
+        public SavingAccount(int ac, string ach, decimal bal,string ty, decimal ir) : base(ac, ach, bal,ty)
         {
             InterestRate = ir;
 

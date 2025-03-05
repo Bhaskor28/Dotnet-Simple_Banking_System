@@ -11,13 +11,15 @@ namespace PApps
         public int AccountNumber { get; private set; }
         public string AccountHolder { get; set; }
         public decimal Balance { get; set; }
+        public string Actype { get; set; }
 
-        public BankAccount(int ac, string ach, decimal bal)
+        public BankAccount(int ac, string ach, decimal bal,string ty)
         {
 
             AccountNumber = ac;
             AccountHolder = ach;
             Balance = bal;
+            Actype = ty;
 
         }
     }
